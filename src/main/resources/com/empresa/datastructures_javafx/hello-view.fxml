@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.empresa.datastructures_javafx.HelloController">
+    <tabs>
+        <Tab text="List">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="37.0" layoutY="35.0" text="Interfaz List - ArrayList - Vector- LinkedList" />
+                        <Button layoutX="248.0" layoutY="74.0" mnemonicParsing="false" onAction="#agregarAL" text="Agregar" />
+                        <TextField fx:id="txt_dato" layoutX="37.0" layoutY="74.0" prefHeight="25.0" prefWidth="178.0" promptText="Introduce un dato" />
+                        <TextArea fx:id="area_datos" layoutX="37.0" layoutY="140.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Button layoutX="333.0" layoutY="74.0" mnemonicParsing="false" onAction="#mostrarAL" text="Mostrar" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Set">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="20.0" layoutY="14.0" prefHeight="24.0" prefWidth="444.0" text="Lo mismo que la anterior. Comprueba si admite duplicados y muestra ordenados" />
+                        <ListView fx:id="listView" layoutX="20.0" layoutY="144.0" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="txt_datos_set" layoutX="20.0" layoutY="64.0" promptText="Introduce un dato" />
+                        <Button fx:id="agregarSET" layoutX="194.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Agregar" onAction="#agregarSET"/>
+                        <Button fx:id="eliminarElemento" layoutX="300.0" layoutY="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Eliminar" onAction="#eliminarElemento"/>
+                        <Button fx:id="mostrarSET" layoutX="20.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Mostrar" onAction="#mostrarSET"/>
+                        <Label fx:id="lbl_numero_elementos" layoutX="20.0" layoutY="360.0" />
+
+                        <!-- Agregar la etiqueta para mostrar la fecha y hora actual -->
+                        <Label fx:id="lbl_fecha_hora" layoutX="20.0" layoutY="400.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <Tab text="Map">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab text="Queue">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
